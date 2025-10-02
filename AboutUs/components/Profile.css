@@ -1,0 +1,24 @@
+img{
+    margin-top: 10px;
+    width: 300px;
+    border-radius: 100px;
+    height: 300px;
+}
+.card{
+    display: flex;
+    border: 2px solid white;
+    background-color: rgb(66, 47, 47);
+}
+.skills{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-around;
+}
+.skill{
+    background-color: black;
+    padding: 12px;
+    border-radius: 12px;
+}
+.info{
+    margin: 20px;
+}
