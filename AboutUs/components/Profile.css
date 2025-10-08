@@ -1,13 +1,14 @@
 img{
     margin-top: 10px;
     width: 300px;
-    border-radius: 100px;
+    border-radius: 400px;
     height: 300px;
 }
 .card{
     display: flex;
     border: 2px solid white;
-    background-color: rgb(66, 47, 47);
+    background-color: rgb(75, 75, 75);
+    margin: 25px;
 }
 .skills{
     display: flex;
@@ -15,7 +16,7 @@ img{
     justify-content: space-around;
 }
 .skill{
-    background-color: black;
+    background-color: rgb(109, 109, 109);
     padding: 12px;
     border-radius: 12px;
 }
