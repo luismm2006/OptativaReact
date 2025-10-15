@@ -11,7 +11,7 @@ export default function Profile({url, name, email, bio, skills}){
                 </div>
                 <div className="skills">
                     {skills.map((ele, index) => (
-                        <div className="skill" key={index}>{ele}</div>
+                        <div className="skill" indice={index}>{ele}</div>
                     ))}
                 </div>
             </div>
