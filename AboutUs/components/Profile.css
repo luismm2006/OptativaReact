@@ -1,14 +1,15 @@
 img{
     margin-top: 10px;
-    width: 300px;
-    border-radius: 400px;
-    height: 300px;
+    width: 400px;
+    border-radius: 300px;
+    height: 350px;
 }
 .card{
     display: flex;
     border: 2px solid white;
     background-color: rgb(75, 75, 75);
     margin: 25px;
+    border-radius: 200px 20px 20px 200px;
 }
 .skills{
     display: flex;
