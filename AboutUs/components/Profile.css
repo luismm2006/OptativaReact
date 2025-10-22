@@ -24,3 +24,10 @@ img{
 .info{
     margin: 20px;
 }
+.premium{
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    border: 2px solid white;
+    margin: 25px;
+    border-radius: 200px 20px 20px 200px;
+}
