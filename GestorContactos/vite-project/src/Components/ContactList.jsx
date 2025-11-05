@@ -1,15 +1,12 @@
+import ContactItem from "./ContacItem";
 
-function ContactList({contacts}){
+function ContactList({contacts, onDelete}){
 
     return(
         <ul>
             {contacts.map((contact)=>{
                 return (
-
-                <li key={contact.id}>
-                    {contact.name}
-                    {contact.phone}
-                </li>
+                    <ContactItem key={contact.id} item={contact} onDelete={onDelete}/>
                 )
             })}
         </ul>
