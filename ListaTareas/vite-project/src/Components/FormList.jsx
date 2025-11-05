@@ -22,15 +22,15 @@ function FormList(){
                 
             <div>
                 <label htmlFor="userName">Username: </label>
-                <input type="text" name="userName" id="userName" onChange={(e) => setUserName(e.target.value)}/>
+                <input type="text" name="userName" id="userName" value={userName} onChange={(e) => setUserName(e.target.value)}/>
             </div>
             <div>
                 <label htmlFor="fullName">FullName: </label>
-                <input type="text" name="fullName" id="fullName" onChange={(e) => setFullName(e.target.value)}/>
+                <input type="text" name="fullName" id="fullName" value={fullName} onChange={(e) => setFullName(e.target.value)}/>
             </div>
             <div>
                 <label htmlFor="age">Age: </label>
-                <input type="text" name="age" id="age" onChange={(e) => setAge(e.target.value)}/>
+                <input type="text" name="age" id="age" value={age} onChange={(e) => setAge(e.target.value)}/>
             </div>
             <div>
                 <button type="button" onClick={handleAdd}>Submit</button>
