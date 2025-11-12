@@ -1,0 +1,17 @@
+nav{
+    background-color: aquamarine;
+    padding: 20px;
+    
+}
+.links{
+    text-decoration: none;
+    color: black;
+
+}
+.links:hover{
+    color: rgb(0, 26, 255);
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
