@@ -12,26 +12,35 @@ import ProductCounter from './Components/ProductCounter'
 import ProductAdd from './Components/ProductAdd'
 import ContactForm from './Components/ContactForm'
 import ContactList from './Components/ContactList'
+import ProductForm from './Components/ProductForm'
+import ProductList from './Components/ProductList'
 
 function App() {
-  const [task, setTask] = useState([ 
-    { id: Date.now(), title: "Comprar", priority: "baja" }
+  const [product, setProduct] = useState([ 
+    {
+      id: Date.now(),
+      name: "Laptop",
+      category: "Tecnología",
+      favorite: false
+    }
 ]);
-  const handleAdd = (titulo, prioridad) => {
-    setTask([...task, {id: Date.now(), title: titulo, priority: prioridad }]);
+  const handleAdd = (nombre, categoria) => {
+    setProduct([...product, {id: Date.now(), name: nombre, category: categoria, favorite: false}]);
   }
-
-  const handleDelete = (indice) => {
-    setTask(task.filter(t => t.id !== indice));
+  const handleFav = (id) => {
+    const productChange = product.map((p) => {
+      return p.id === id ? {...p, favorite: !p.favorite} : p;
+    });
+    setProduct(productChange);
   }
-  const handleUpdate = (indice, titulo, prioridad) => {
-    const newTask = task.map(t => t.id === indice ? {...t , title: titulo, priority: prioridad} : t);
-    setTask(newTask);
+  const handleDelete = (id) => {
+    const productosValidos = product.filter(p => p.id !== id);
+    setProduct(productosValidos);
   }
   return (
     <>
-      <ContactForm add={handleAdd}/>
-      <ContactList task={task} deleteTask={handleDelete} update={handleUpdate}/>
+      <ProductForm addProduct={handleAdd}/>
+      <ProductList product={product} toggleFavorite={handleFav} deleteProduct={handleDelete}/>
     </>
   )
 }
