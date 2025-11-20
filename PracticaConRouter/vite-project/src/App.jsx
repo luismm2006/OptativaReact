@@ -3,6 +3,8 @@ import Home from "./Components/Home"
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Layout from "./Components/Layout";
+import Recurso from "./Components/Recurso";
+import Detalles from "./Components/Detalles";
 
 export default function Router() {
   return (
@@ -13,6 +15,8 @@ export default function Router() {
             <Route path="/home" element={<Home />}></Route>
             <Route path="about" element={<About />}></Route>
             <Route path="contact" element={<Contact />}></Route>
+            <Route path="recurso" element={<Recurso />}></Route>
+            <Route path="detalles/:verb" element={<Detalles />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
