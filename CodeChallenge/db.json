@@ -1,0 +1,10 @@
+{
+  "creatures": [
+    {
+      "id": "9d20",
+      "name": "Topo",
+      "species": "Predator",
+      "happiness": 60
+    }
+  ]
+}
