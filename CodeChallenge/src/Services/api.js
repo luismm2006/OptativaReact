@@ -1,4 +1,4 @@
-const URL = "http://localhost:3001/creatures";
+const URL = "http://localhost:3000/creatures";
 
 const handleResponse = (response) => {
     if(!response.ok){

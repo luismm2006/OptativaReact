@@ -1,0 +1,70 @@
+.resource-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  font-family: "Inter", sans-serif;
+  background: #f5f6fb;
+  min-height: 100vh;
+}
+
+h2 {
+  font-size: 32px;
+  color: #2c2f3b;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.verbs-table {
+  width: 70%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.verbs-table thead {
+  background: #2d4cff;
+}
+
+.verbs-table th {
+  padding: 14px;
+  text-align: left;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.verbs-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #e5e7f1;
+  font-size: 15px;
+  color: #333;
+}
+
+.verbs-table tr:last-child td {
+  border-bottom: none;
+}
+
+.verbs-table tbody tr:hover {
+  background: #eef1ff;
+  transition: 0.2s;
+}
+
+button {
+  background: #2d4cff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1f35c0;
+  scale: 1.05;
+}
