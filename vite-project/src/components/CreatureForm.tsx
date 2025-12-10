@@ -7,7 +7,7 @@ export default function CreatureForm() {
   const [name, setName] = useState('');
   const [species, setSpecies] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if(!name || !species) return;
     rescueCreature(name, species);

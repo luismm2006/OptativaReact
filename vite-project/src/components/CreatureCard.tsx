@@ -1,14 +1,17 @@
 import React from 'react';
+import type { Creature } from '../model/Creature';
 import { useCreatures } from '../context/CreaturesContext';
 // El CSS ya se importó en el padre (List), pero es buena práctica importarlo aquí también si usamos módulos o scoped.
 // Como son archivos CSS normales, con importarlo una vez basta, pero para encapsular:
 import './CreatureCard.css'; 
-
-export default function CreatureCard({ creature }) {
+interface CreatureCardProps {
+  creature: Creature;
+}
+export default function CreatureCard({ creature } : CreatureCardProps) {
   const { feedCreature, releaseCreature } = useCreatures();
 
   // Lógica visual simple
-  const getBarColor = (val) => {
+  const getBarColor = (val : number) => {
     if (val < 30) return '#e63946'; // Rojo
     if (val >= 100) return '#ffd700'; // Dorado (Máximo)
     if (val > 70) return '#2d6a4f'; // Verde
